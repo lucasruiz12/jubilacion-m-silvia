@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #595858;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+.countdown-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Asegura que las imágenes no se salgan del contenedor */
+}
+
+.countdown-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 16px;
+    color: #007BFF;
+}
+
+.countdown-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.ambito.com/p/0621ed9fb23e087c4bd9bc89dc4ba952/adjuntos/239/imagenes/039/901/0039901296/et-el-extraterrestre.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    /* Ajusta la opacidad según lo necesites */
+    z-index: 0;
+}
+
+.countdown-container-content {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 480px) {
+    .countdown-container {
+        padding: 15px;
+    }
+
+    .countdown-container h1 {
+        font-size: 20px;
+    }
+
+    .countdown {
+        font-size: 16px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+}
