@@ -34,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
             countdown.textContent =
                 `${days} días ${hours} horas ${minutes} minutos ${seconds} segundos`;
         } else {
-            countdown.textContent = "YA LLEGÓ TU JUBILACIÓN!";
+            title.textContent = 'Finalmente:';
+            countdown.textContent = "LLEGÓ TU JUBILACIÓN, MARÍA SILVIA!";
+            message.textContent = "Muchas felicidades! Feliz cumple."
         }
     }
 
